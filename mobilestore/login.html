@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOGIN</title>
+<link rel="stylesheet" href="stle.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-page">
+	<div class="form">
+		<form class="register-form"  action="./index.html"  >
+			<input type="text" placeholder="username"/>
+			<input type="password" placeholder="password"/>
+			<input type="email" placeholder="email-id"/>
+			<button type="submit" >Try it</button>
+			<p class="message">Already registered? <a href="#">login</a></p>
+
+		</form>
+		<form class="login-form" action="./car/index1.html">
+			<input type="text" placeholder="user name"/>
+			<input type="password" placeholder="password"/>
+			<button type="submit">login</button>
+		<p class="message">Not registered? <a href="#">Register</a></p></form>
+
+		
+	</div>
+    </div>  
+
+
+    <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download our APP</h3>
+                        <p>Download App for Andriod and ios mobile</p>
+                        <div class="app-logo">
+                            <img src="RealMe/play-store.png">
+                            <img src="RealMe/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="RealMe/download.jpg">
+                        <p>To become a healthy and sustainable enterprise</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>coupons</li>
+                            <li>Blog</li>
+                            <li>Return policy</li>
+                            <li>Bulk Order</li>
+                        </ul>
+                    </div>
+                     <div class="footer-col-4">
+                        <h3>follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - The R store INDIA</p>
+            </div>
+        </div>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+    	$('.message a').click(function(){
+    	$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		});
+		
+		$(document).ready(()=>{
+			$(".register-form").submit( (e)=>{
+				e.preventDefault();
+				alert("Registered");
+				window.location.replace('main.html');
+			});
+		});
+
+		$(document).ready(()=>{
+			$(".login-form").submit( (e)=>{
+				e.preventDefault();
+				alert("Logged in");
+				window.location.replace('main.html');
+			});
+		});
+	
+    </script>
+	
+
+</body>
+</html>
